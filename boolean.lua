@@ -1,0 +1,10 @@
+-- boolean practice
+print(4 and 5)
+print(5 and false)
+print(nil and 5)
+print(nil or 5)
+print(5 or nil)
+print(false and (nil or 3))
+print(false or 2 and 4)
+print(not false and 3)
+print(not 4 or 3)
