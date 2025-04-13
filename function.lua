@@ -74,18 +74,18 @@ combinations({ 1, 2, 3 })
 
 
 -- Create a function that returns a function with an unbounded call chain
-function create_chain()
-    -- Create a string of Lua code dynamically
-    local code = [[
-        return function()
-            return load('return function() ]] .. code .. [[end')()()
-        end
-    ]]
+-- function create_chain()
+--     -- Create a string of Lua code dynamically
+--     local code = [[
+--         return function()
+--             return load('return function() ]] .. code .. [[end')()()
+--         end
+--     ]]
 
-    -- Use load to create the function
-    return load(code)()
-end
+--     -- Use load to create the function
+--     return load(code)()
+-- end
 
--- Create and call the chain
-local f = create_chain()
-f() -- This will create a new function and call it indefinitely
+-- -- Create and call the chain
+-- local f = create_chain()
+-- f() -- This will create a new function and call it indefinitely
